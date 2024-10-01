@@ -44,4 +44,4 @@ fi
 
 echo '# Testing Extend app using demo script'
 
-GRPC_SERVER_URL="http://${NGROK_URL#*://}" bash demo.sh
+GRPC_SERVER_URL="${NGROK_URL#*://}" bash demo.sh
