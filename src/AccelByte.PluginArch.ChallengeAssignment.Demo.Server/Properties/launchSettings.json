@@ -1,0 +1,13 @@
+﻿{
+  "profiles": {
+    "AccelByte.PluginArch.ChallengeAssignment.Demo.Server": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": false,
+      "applicationUrl": "http://localhost:5136;https://localhost:7128",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}
