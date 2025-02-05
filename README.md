@@ -108,7 +108,7 @@ custom functions for connecting this app onto challenge service to be used for c
 
    h. [ngrok](https://ngrok.com/)
 
-      - Follow installation instruction for Linux [here](https://ngrok.com/download)
+      - Follow installation instruction for Linux [here](https://ngrok.com/downloads)
 
 2. Access to AGS environment.
 
