@@ -351,9 +351,6 @@ public IP, we can use something like [ngrok](https://ngrok.com/).
 
 5. Import the [Postman collection](demo/challenge-assignment-demo.postman_collection.json) in order to simulate the extend app flow. Pay attention to this app console log when extend app flow is running. At least one of the `gRPC Server` methods should get called when you run all the requests in the collection.
 
-   > :warning: Please don't forget to set the required environment variables in the Postman Collection Overview (and/or the Global Environment) including the `Client ID` and `Client Secret` created in the previous step.
-   > You'll also need to set the environment variable `GRPC_SERVER_URL` (ex: `9.tcp.ap.ngrok.io:99999`) if you're using Ngrok to expose your locally hosted Extend App; or `EXTEND_APP_NAME` if you deployed your Extend App to AccelByte Gaming Services.
-
 ### Test Observability
 
 To be able to see the how the observability works in this app locally, there are few things that need be setup before performing tests.
