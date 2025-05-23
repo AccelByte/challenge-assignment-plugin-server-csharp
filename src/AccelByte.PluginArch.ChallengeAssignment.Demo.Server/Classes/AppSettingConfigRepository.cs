@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2023-2024 AccelByte Inc. All Rights Reserved.
+﻿// Copyright (c) 2023-2025 AccelByte Inc. All Rights Reserved.
 // This is licensed software from AccelByte Inc, for limitations
 // and restrictions contact your company contract manager.
 
@@ -30,6 +30,8 @@ namespace AccelByte.PluginArch.ChallengeAssignment.Demo.Server
 
         public string ResourceName { get; set; } = "";
 
+        public string ServiceName { get; set; } = "";
+
         public IHttpLogger? Logger { get; set; } = null;
 
         public void ReadEnvironmentVariables()
@@ -50,9 +52,15 @@ namespace AccelByte.PluginArch.ChallengeAssignment.Demo.Server
             if ((abNamespace != null) && (abNamespace.Trim() != ""))
                 Namespace = abNamespace.Trim();
 
+            string? appServiceName = Environment.GetEnvironmentVariable("OTEL_SERVICE_NAME");
+            if (appServiceName == null)
+                ServiceName = "extend-app-challenge-assignment";
+            else
+                ServiceName = $"extend-app-{appServiceName.Trim().ToLower()}";
+
             string? appResourceName = Environment.GetEnvironmentVariable("APP_RESOURCE_NAME");
             if (appResourceName == null)
-                appResourceName = "CHALLENGEASGGRPCSERVICE";
+                appResourceName = "CHALLENGEASGEXTENDAPP";
             ResourceName = appResourceName;            
         }
     }
