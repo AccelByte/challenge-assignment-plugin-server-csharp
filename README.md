@@ -195,8 +195,6 @@ The custom functions in this app can be tested locally using [postman](https://w
 
 3. Continue by selecting `AssignmentFunction/Assign` method and invoke it with the sample message below.
 
-   a. With a VALID `payload`
-
       ```json
       {
          "goals": [
@@ -243,7 +241,7 @@ The custom functions in this app can be tested locally using [postman](https://w
          ],
          "namespace": "namespace",
          "userId": "dcd3fc9c238a4c6d9cd8c5da2f595bd6"
-   }  
+      }  
       ```
 
       The response will be the list of goals chosen to be assigned to user
