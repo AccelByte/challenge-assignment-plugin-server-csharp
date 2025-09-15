@@ -70,14 +70,14 @@ custom functions for connecting this app onto challenge service to be used for c
       ...
       ```
 
-   d. .NET 6 SDK
+   d. .NET 8 SDK
 
-      - To install from Ubuntu repository, run `sudo apt-get update && sudo apt-get install -y dotnet-sdk-6.0`
+      - To install from Ubuntu repository, run `sudo apt-get update && sudo apt-get install -y dotnet-sdk-8.0`
 
       ```
       dotnet --version
       
-      6.0.128
+      8.0.119
       ```
 
    e. [Postman](https://www.postman.com/)
