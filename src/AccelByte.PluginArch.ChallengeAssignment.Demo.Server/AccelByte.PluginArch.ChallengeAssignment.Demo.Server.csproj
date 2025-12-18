@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AccelByte.Sdk" Version="0.65.0" />
+    <PackageReference Include="AccelByte.Sdk" Version="0.77.0" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.63.0" />
     <PackageReference Include="Grpc.AspNetCore.HealthChecks" Version="2.63.0" />
     <PackageReference Include="Grpc.AspNetCore.Server.Reflection" Version="2.63.0" />
