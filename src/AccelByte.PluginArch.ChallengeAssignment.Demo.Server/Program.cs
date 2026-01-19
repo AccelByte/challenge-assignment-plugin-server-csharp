@@ -32,7 +32,7 @@ namespace AccelByte.PluginArch.ChallengeAssignment.Demo.Server
             if (appServiceName == null)
                 appServiceName = "extend-app-challenge-assignment";
             else
-                appServiceName = $"extend-app-{appServiceName.Trim().ToLower()}";
+                appServiceName = $"extend-app-ca-{appServiceName.Trim().ToLower()}";
 
             Metrics.DefaultRegistry.SetStaticLabels(new Dictionary<string, string>()
             {
